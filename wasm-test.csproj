@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>wasm_test</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Basic.Reference.Assemblies" Version="1.2.4" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
