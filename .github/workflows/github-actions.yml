@@ -9,7 +9,7 @@ jobs:
       with:
         dotnet-version: '6.x.x'
     - run: dotnet build /bl
-    - run: ./Basic.CompilerLog msbuild.binlog
+    - run: ./Basic.CompilerLog create msbuild.binlog
     - uses: actions/upload-artifact@v3
       with:
         name: CompilerLog
