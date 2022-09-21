@@ -1,0 +1,16 @@
+name: CompilerLog on build
+on: [push]
+jobs:
+  build:
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '6.x.x'
+    - run: dotnet build /bl
+    - run: ./Basic.CompilerLog msbuild.binlog
+    - uses: actions/upload-artifact@v3
+      with:
+        name: CompilerLog
+        path: msbuild.compilerlog
+
